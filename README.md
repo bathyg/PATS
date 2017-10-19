@@ -26,11 +26,17 @@ Here I will show three examples.
 * *Target: Search a novel peptide from pre-loaded data sets.* *
 
 (1) Go to [PATS website](http://sequest.scripps.edu/PATS), search 'DVMLENYR', a tryptic peptide from Krüppel associated box (KRAB) domain.
+
 (2) The results shows all the gene/proteins containing this tryptic peptide 'DVMLENYR'. Note all the genes are ZNF， zinc finger proteins.
+
 (3）Click gene name will direct you to the specific [gene card](http://www.genecards.org)
+
 (4) Click protein name will direct you to the specific [uniprot entry](http://www.uniprot.org)
+
 (5) Click network will direct you to the PATS generated protein interaction network, showing all the bait proteins in which 'DVMLENYR' can be identified. The proteins in the network are potential interactors of the gene/protein you clicked. Size of the circle is proportional to confidence and thickness of edges is proportional to STRING-DB score.
+
 (6) Click correlation graph will direct you to the K-mean clustered protein correlation graph, showing all bait proteins related to DVMLENYR' and their STRING-DB correlation.
+
 (7) Click Download correlation file will download an comma separated file (can be opened by Excel) for the correlation matrix.
 
 **Example 2 (intermediate)**
