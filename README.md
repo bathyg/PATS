@@ -47,8 +47,10 @@ Here I will show three examples.
 
 This will require you to install PATS on your own workstation/server.
 
-Installation:
+### Installation:
+
 Dependency of PATS
+
 Pyteomics https://pythonhosted.org/pyteomics/installation.html
 
 Lz4framed https://pypi.python.org/pypi/py-lz4framed/0.9.7
