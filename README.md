@@ -1,6 +1,6 @@
 # PATS, Post-acquisition targeted search (PATS)
 
-* *Yu Gao, Jiao Ma, Alan Saghatelian, John R. Yates III @ The Scripps Research Institute & Salk Institute of Biological Studies* *
+* *Yu Gao, Jiao Ma, Alan Saghatelian, John R. Yates III @ The Scripps Research Institute & Salk Institute of Biological Studies
 
 ## Purpose of this method:
 
