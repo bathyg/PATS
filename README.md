@@ -1,12 +1,10 @@
-# PATS
-Post-acquisition targeted search (PATS).
+# PATS, Post-acquisition targeted search (PATS)
 
-Yu Gao, Jiao Ma, Alan Saghatelian, John R. Yates III
+* *Yu Gao, Jiao Ma, Alan Saghatelian, John R. Yates III* *
 
-The Scripps Research Institute
-Salk Institute of Biological Studies
+**The Scripps Research Institute & Salk Institute of Biological Studies**
 
-**Purpose of this method:**
+## Purpose of this method:
 
 PATS allows researchers to efficiently identify a peptide/protein of interest, with or without PTMs, from existing large mass spectrometry data sets. Using interactome data, PATS can assign putative function of your target peptide/protein using known protein interaction.
 
@@ -18,7 +16,7 @@ Go to sequest.scripps.edu/PATS, search for "E(+123.45)DITPE(+123.45)P" on PATS. 
 **How it works?**
 PATS is pre-loaded with two large interactome data sets [1](https://www.ncbi.nlm.nih.gov/pubmed/28514442) [2](https://www.ncbi.nlm.nih.gov/pubmed/26496610), containing more than 40,000 hours of AP-MS runs. Each AP-MS run contains mass spectrometry data of a pull-down experiment by a bait protein. PATS will search your target peptide with the novel PTM "E(+123.45)DITPE(+123.45)P" against all the data and see if it can be identified in any of 40,000 hours of AP-MS experiments. If your target is identified within multiple bait pull-downs, PATS will generate protein interaction network for your target peptide based [STRING-DB](string-db.org).
 
-**How to use:**
+## How to use:
 
 Here I will show three examples.
 
