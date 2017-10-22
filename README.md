@@ -44,6 +44,7 @@ Here I will show three examples.
 **Example 3 (advanced)**
 * *Target: Search peptide/proteins from my own raw data.* *
 
+<<<<<<< HEAD
 This will require you to install PATS on your own workstation/server. Please follow the installation guide at the bottom to install PATS and all dependencies.
 
 MS2 files are in ***Example/ms2_files***
@@ -88,6 +89,10 @@ tr|E7ER27|E7ER27_HUMAN	68	GGK.AVANYDSVEEGEK.VVK	cs_b3268_HK3.6577.6577.2	2.6367	
 sp|Q9NRX4|PHP14_HUMAN	48	GYK.WAEYHADIYDK.VSG	cs_b3165_RAE1.15715.15715.3	1.2174	0.333744044685	4.43622046773
 ```
 
+=======
+
+This will require you to install PATS on your own workstation/server.
+>>>>>>> ef85588f452fd39a50a66499f54d0467142bd34f
 
 ### Installation:
 
@@ -105,6 +110,10 @@ Use PATS to search a large data set downloaded from Pride. In this example, you 
 (3) Use "python PATS_ms2_index.py MS2_SOURCE_FOLDER INDEX_FILE_TEMP_FOLDER" to generate index from the ms2 files in MS2_SOURCE_FOLDER and store in INDEX_FILE_TEMP_FOLDER
 
 
+<<<<<<< HEAD
 ### How to cite:
+=======
+How to cite:
+>>>>>>> ef85588f452fd39a50a66499f54d0467142bd34f
 
 Yu Gao, Jiao Ma, Alan Saghatelian, John R. Yates III, "TARGETED SEARCHES FOR NOVEL PEPTIDES IN BIG MASS SPECTROMETRY DATA SETS", submitted to Nature Methods
