@@ -1,12 +1,16 @@
-import os, shutil, glob, sys
 import argparse
 import cPickle as pickle
-import time
+import glob
 import math
-from numpy import log
 import multiprocessing
-import lz4
+import os
+import shutil
+import sys
+import time
+from numpy import log
 import csv2index
+from library import lz4
+
 
 def extract_idx(mass_pair):
     file_list = glob.glob(os.path.join(mass_pair[2], '*.idx'))
@@ -35,6 +39,16 @@ def write_translate_list(translate_list, translate_list_output):
         for item in translate_list:
             file1.write(','.join(item) + '\n')
 
+def generate_mass_index(mz4_folder):
+    os.chdir(mz4_folder)
+    file_list=glob.glob('*.mz4')
+    temp_array=[]
+    for each in file_list:
+        min_mass=float(each.split('-')[0])
+        max_mass=float(each.split('-')[1].split('.mz4')[0])
+        temp_array.append((min_mass,max_mass,each))
+    sorted_array=sorted(temp_array,key=lambda x:x[0])
+    pickle.dump(sorted_array,open('mass_index.p','wb'),protocol=2)
 
 def extract_mass_to_file(file_pair):
     dict_index_file=file_pair[0]
@@ -113,18 +127,19 @@ if __name__ == '__main__':
     start0 = time.clock()
 
 
-    parser = argparse.ArgumentParser(description='Usage: python PATS_ms2_index.py --ms2_folder [your ms2 folder] --index_folder [folder to store index files]')
+    parser = argparse.ArgumentParser(description='Usage: python PATS_ms2_index.py --ms2_folder [your ms2 folder] --mz4_folder [folder to store index files]')
     parser.add_argument('--ms2_folder', dest='ms2_folder', help='absolute path to the folder of all source ms2 files')
     parser.add_argument('--mz4_folder', dest='mz4_folder', help='absolute path to the folder to store indexed mass spectra')
-    parser.add_argument('--max_thread_number', dest='max_cpu', nargs='?', type=int, const=4, help='maximum number of thread used for indexing, default=4')
+    parser.add_argument('--max_thread_number', dest='max_cpu', type=int, help='maximum number of thread used for indexing')
 
     results = parser.parse_args()
-    print "Generating index files with %i threads..." % results.max_cpu
+
     index_folder = os.path.join(results.mz4_folder,'translate\\index\\')
     idx_folder = os.path.join(results.mz4_folder,'translate\\index\\idx\\')
     spec_folder = os.path.join(results.mz4_folder,'translate\\index\\spec\\')
     csv_folder = os.path.join(results.mz4_folder,'translate\\csv\\')
     ms2_folder = results.ms2_folder
+    print "Generating index files with %i threads..." % results.max_cpu
     if len(sys.argv) == 1:
         parser.print_help()
         sys.exit(1)
@@ -223,8 +238,8 @@ if __name__ == '__main__':
     start = time.clock()
     print "Generating index from csv..."
     csv2index.generate_index(csv_folder,index_folder,num_split=1000)
-
     print "Index file generated in %.2f (s)" % (time.clock() - start)
+    generate_mass_index(results.mz4_folder)
     start = time.clock()
     print "Indexing all finished in %.2f (s)" % (time.clock()-start0)
 
