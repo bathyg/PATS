@@ -8,7 +8,11 @@ PATS allows researchers to efficiently identify a peptide/protein of interest, w
 
 ### For example:
 
-Researchers from lab X, identified a novel peptide "EDITPEP" with a novel PTM (+123.45 Da on E), and they want to know 1.If it is real? 2.Possible functions?
+Researchers from lab X, identified a novel peptide "EDITPEP" with a novel PTM (+123.45 Da on E), and they want to know 
+
+* *1.If it is real? 
+
+* *2.Possible functions?
 
 **PATS solution:**
 Go to sequest.scripps.edu/PATS, search for "E(+123.45)DITPE(+123.45)P" on PATS. If found, PATS will show the potential protein interaction network of it. If not found, PATS will allow you to submit it for search. After the search is done, PATS will email you and you will be able to see the search results.
