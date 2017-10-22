@@ -63,7 +63,7 @@ Here I will show three examples.
 **Example 3 (advanced)**
 * *Target: Search peptide/proteins from my own raw data.* *
 
-This will require you to install PATS on your own workstation/server. Please follow the installation guide at the bottom to install PATS and all dependencies.
+This will require you to install PATS on your own workstation/server. Please follow the installation guide at the bottom to install PATS and all dependencies. Read the Example3_readme.txt file under the Example folder, copy the whole Example folder to somewhere with enough disk space and fast IOPS.
 
 MS2 files are in ***Example/ms2_files***
 
