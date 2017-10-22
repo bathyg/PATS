@@ -15,7 +15,7 @@ Researchers from lab X, identified a novel peptide "EDITPEP" with a novel PTM (+
 * *2. Possible functions?*
 
 **PATS solution:**
-Go to sequest.scripps.edu/PATS, search for "E(+123.45)DITPE(+123.45)P" on PATS. If found, PATS will show the potential protein interaction network of it. If not found, PATS will allow you to submit it for search. After the search is done, PATS will email you and you will be able to see the search results.
+Go to [sequest.scripps.edu/PATS](http://sequest.scripps.edu/PATS), search for "E(+123.45)DITPE(+123.45)P" on PATS. If found, PATS will show the potential protein interaction network of it. If not found, PATS will allow you to submit it for search. After the search is done, PATS will email you and you will be able to see the search results.
 
 **How it works?**
 PATS is pre-loaded with two large interactome data sets [1](https://www.ncbi.nlm.nih.gov/pubmed/28514442) [2](https://www.ncbi.nlm.nih.gov/pubmed/26496610), containing more than 40,000 hours of AP-MS runs. Each AP-MS run contains mass spectrometry data of a pull-down experiment by a bait protein. PATS will search your target peptide with the novel PTM "E(+123.45)DITPE(+123.45)P" against all the data and see if it can be identified in any of 40,000 hours of AP-MS experiments. If your target is identified within multiple bait pull-downs, PATS will generate protein interaction network for your target peptide based on [STRING-DB](string-db.org).
