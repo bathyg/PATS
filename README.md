@@ -91,9 +91,6 @@ sp|Q9NRX4|PHP14_HUMAN	48	GYK.WAEYHADIYDK.VSG	cs_b3165_RAE1.15715.15715.3	1.2174	
 
 =======
 
-This will require you to install PATS on your own workstation/server.
->>>>>>> ef85588f452fd39a50a66499f54d0467142bd34f
-
 ### Installation:
 
 Dependency of PATS
