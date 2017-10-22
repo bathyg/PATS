@@ -54,7 +54,7 @@ Files are downloaded from Bioplex and converted by Rawconverter to .ms2 file
 To index the whole folder with all the ms2 files, run: 
 
 ```es6
-python PATS_ms2_index.py --ms2_folder H:\example3\ms2_files --mz4_folder H:\example3\mz4 --max_thread_number 12***
+python PATS_ms2_index.py --ms2_folder H:\example3\ms2_files --mz4_folder H:\example3\mz4 --max_thread_number 12
 ```
 --ms2_folder specify where is the ms2 files located, use absolute path
 
