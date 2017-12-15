@@ -2,6 +2,8 @@
 
 * *Yu Gao, Jiao Ma, Alan Saghatelian, John R. Yates III @ The Scripps Research Institute & Salk Institute of Biological Studies*
 
+PATS is open-source under Apache License 2.0.
+
 ## Purpose of this method:
 
 PATS allows researchers to efficiently identify a peptide/protein of interest, with or without PTMs, from existing large mass spectrometry data sets. Using interactome data, PATS can assign putative functions of your target peptide/protein using known protein interactions.
@@ -111,6 +113,10 @@ sp|Q9NRX4|PHP14_HUMAN	48	GYK.WAEYHADIYDK.VSG	cs_b3165_RAE1.15715.15715.3	1.2174	
 ### Installation:
 
 Dependency of PATS
+
+PATS runs on Python 2.7 on Windows/Linux/OSX, requires no special hardware. PATS has been tested on Python 2.7.12.
+
+Total installation should take several minutes.
 
 Pyteomics https://pythonhosted.org/pyteomics/installation.html
 
