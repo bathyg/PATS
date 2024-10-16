@@ -132,4 +132,4 @@ Use PATS to search a large data set downloaded from Pride. In this example, you 
 
 ### How to cite:
 
-Yu Gao, Jiao Ma, Alan Saghatelian, John R. Yates III, "TARGETED SEARCHES FOR NOVEL PEPTIDES IN BIG MASS SPECTROMETRY DATA SETS", submitted to Nature Methods
+Yu Gao, Jiao Ma, Alan Saghatelian, John R. Yates III, "TARGETED SEARCHES FOR NOVEL PEPTIDES IN BIG MASS SPECTROMETRY DATA SETS", https://www.biorxiv.org/content/10.1101/239863v1.full
